@@ -4,15 +4,15 @@
 // Здоровье от 50 и до 15 - жёлтый;
 // Менее 15 - красный.
 
-export function getHealth(hero) {
-    let result = 'unknown';
+export default function getHealth(hero) {
+  let result = 'unknown';
 
-    if (hero.health > 50) {
-        result = 'healthy';
-    } else if (hero.health > 15) {
-        result = 'wounded';
-    } else {
-        result = 'critical';
-    }
-    return result;
+  if (hero.health > 50) {
+    result = 'healthy';
+  } else if (hero.health > 15) {
+    result = 'wounded';
+  } else {
+    result = 'critical';
+  }
+  return result;
 }
